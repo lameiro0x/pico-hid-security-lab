@@ -1,0 +1,6 @@
+Warning: the device must be in setup mode. To do this, connect pins 1 (GP0) and 3 (GND).
+Once connected, the payload can be modified as explained below.
+
+If the payload is non-malicious (as is currently the case), connect the device, allow the
+payload to execute, then rename the `.dd` file to `.txt` to edit its contents.
+After editing, rename it back to `.dd` and copy it back to the Pico.
