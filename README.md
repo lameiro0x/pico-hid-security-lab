@@ -58,7 +58,7 @@ If the payload is **not malicious** (as is currently the case):
 This workflow allows safe iteration and testing of payload logic.
 
 Detailed instructions for modifying payloads are provided in  
-[`Instalar/change_payload.txt`](Instalar/change_payload.txt), including how to boot the
+[`change_payload.txt`](install/change_payload.txt), including how to boot the
 device in setup mode and safely edit `.dd` payload files.
 
 ---
@@ -68,23 +68,77 @@ device in setup mode and safely edit `.dd` payload files.
 
 ```bash
 .
-└── Instalar
-├── INSTALL.txt
-├── adafruit-circuitpython-raspberry_pi_pico-en_US-8.0.0.uf2
-├── adafruit-circuitpython-raspberry_pi_pico_w-en_US-8.0.0.uf2
-├── boot.py
-├── code.py
-├── duckyinpython.py
-├── lib/
-│   └── (Adafruit HID and CircuitPython libraries)
-├── payload.dd
-├── payload2.dd
-├── payload3.dd
-├── payload4.dd
-├── pico-ducky-v2.0-win_es.zip
-├── secrets.py
-├── webapp.py
-└── wsgiserver.py
+├── README.md
+└── install/
+    ├── INSTALL.txt
+    ├── adafruit-circuitpython-raspberry_pi_pico-en_US-8.0.0.uf2
+    ├── adafruit-circuitpython-raspberry_pi_pico_w-en_US-8.0.0.uf2
+    ├── boot.py
+    ├── change_payload.txt
+    ├── code.py
+    ├── duckyinpython.py
+    ├── lib
+    │   ├── adafruit_debouncer.mpy
+    │   ├── adafruit_hid
+    │   │   ├── __init__.mpy
+    │   │   ├── consumer_control.mpy
+    │   │   ├── consumer_control_code.mpy
+    │   │   ├── keyboard.mpy
+    │   │   ├── keyboard_layout_base.mpy
+    │   │   ├── keyboard_layout_us.mpy
+    │   │   ├── keycode.mpy
+    │   │   └── mouse.mpy
+    │   ├── adafruit_ticks.mpy
+    │   ├── adafruit_wsgi
+    │   │   ├── __init__.py
+    │   │   ├── request.mpy
+    │   │   └── wsgi_app.mpy
+    │   ├── asyncio
+    │   │   ├── __init__.mpy
+    │   │   ├── core.mpy
+    │   │   ├── event.mpy
+    │   │   ├── funcs.mpy
+    │   │   ├── lock.mpy
+    │   │   ├── manifest.mpy
+    │   │   ├── stream.mpy
+    │   │   └── task.mpy
+    │   ├── consumer_control_extended.mpy
+    │   ├── keyboard_layout.mpy
+    │   ├── keyboard_layout_mac_fr.mpy
+    │   ├── keyboard_layout_us_dvo.mpy
+    │   ├── keyboard_layout_win_br.mpy
+    │   ├── keyboard_layout_win_cz.mpy
+    │   ├── keyboard_layout_win_cz1.mpy
+    │   ├── keyboard_layout_win_da.mpy
+    │   ├── keyboard_layout_win_de.mpy
+    │   ├── keyboard_layout_win_es.mpy
+    │   ├── keyboard_layout_win_fr.mpy
+    │   ├── keyboard_layout_win_hu.mpy
+    │   ├── keyboard_layout_win_it.mpy
+    │   ├── keyboard_layout_win_po.mpy
+    │   ├── keyboard_layout_win_sw.mpy
+    │   ├── keyboard_layout_win_tr.mpy
+    │   ├── keycode_mac_fr.mpy
+    │   ├── keycode_win_br.mpy
+    │   ├── keycode_win_cz.mpy
+    │   ├── keycode_win_cz1.mpy
+    │   ├── keycode_win_da.mpy
+    │   ├── keycode_win_de.mpy
+    │   ├── keycode_win_es.mpy
+    │   ├── keycode_win_fr.mpy
+    │   ├── keycode_win_hu.mpy
+    │   ├── keycode_win_it.mpy
+    │   ├── keycode_win_po.mpy
+    │   ├── keycode_win_sw.mpy
+    │   └── keycode_win_tr.mpy
+    ├── payload.dd
+    ├── payload2.dd
+    ├── payload3.dd
+    ├── payload4.dd
+    ├── pico-ducky-v2.0-win_es.zip
+    ├── secrets.py
+    ├── webapp.py
+    └── wsgiserver.py
 ```
 
 ---
